@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phan Loai Hoc Sinh</title>
+    <script>
+        function classify() {
+            let a = document.getElementById('point').value;
+            if ( a >= 75){
+                alert("Loại A");}
+            else if ( 60 <= a && a <75){
+                alert("Loại B");}
+            else if ( 45 <= a && a < 60){
+                alert("Loại C");}
+            else if ( 35 <= a && a <45){
+                alert("Loại D");}
+            else if ( a < 35) {
+                alert("Loại E");
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <p>Nhập điểm: </p>
+    <input id="point" type="number" min="0" max="100">
+    <button type="button" onclick="classify()">Xem</button>
+</body>
+</html>
