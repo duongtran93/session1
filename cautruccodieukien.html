@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim so lon nhat trong 3 so</title>
+    <script>
+        function findmax() {
+            let a = parseInt(document.getElementById("n1").value);
+            let b = parseInt(document.getElementById("n2").value);
+            let c = parseInt(document.getElementById("n3").value);
+            let max = a;
+            if (max < b)
+                max = b;
+            if (max < c)
+                max = c;
+            alert(max);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="n1"><br>
+    <input type="text" id="n2"><br>
+    <input type="text" id="n3"><br>
+    <button onclick="findmax()">max</button>
+</body>
+</html>
