@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau truc lap</title>
+    <script>
+        function findmax() {
+            let n = document.getElementById('nb').value;
+            let arr = n.split(',');
+            let max = Number(arr[0]);
+            for (let n=0; n<arr.length; n++)
+            {
+                if (max < Number(arr[n]))
+                {
+                    max = Number(arr[n]);
+                }
+            }
+            alert(max);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="nb">
+    <button type="button" onclick="findmax()">Find Max</button>
+</body>
+</html>
